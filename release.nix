@@ -11,7 +11,7 @@ let
       buildInputs = [ pkgs.clang ];
     };
     
-    build = { system ? buildins.currentSystem }:
+    build = { system ? builtins.currentSystem }:
     pkgs.releaseTools.nixBuild {
       name = "nix-hello";
       src = jobs.tarball;
