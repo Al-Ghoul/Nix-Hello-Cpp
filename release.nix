@@ -8,6 +8,7 @@ let
     tarball = pkgs.releaseTools.sourceTarball {
       name = "hello-nix-tarball";
       src = helloSrc;
+      doDist = false;
       buildInputs = [ pkgs.clang ];
     };
     
