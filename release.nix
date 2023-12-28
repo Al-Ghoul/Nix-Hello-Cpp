@@ -14,7 +14,7 @@ let
     build = { system ? builtins.currentSystem }:
       pkgs.releaseTools.nixBuild {
         name = "nix-hello";
-        src = jobs.tarball;
+        src = tarball;
         buildInputs = [ pkgs.clang ];
         installPhase = ''
           mkdir -p $out/bin
