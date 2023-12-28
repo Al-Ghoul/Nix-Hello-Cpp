@@ -9,18 +9,18 @@ let
       name = "hello-nix-tarball";
       src = helloSrc;
       doDist = false;
-      buildInputs = [ pkgs.clang ];
-      installPhase = ''
-        mkdir -p $out/bin
-        cp hello $out/bin
-      '';
     };
     
     build = { system ? builtins.currentSystem }:
-    pkgs.releaseTools.nixBuild {
-      name = "nix-hello";
-      src = jobs.tarball;
-    };
+      pkgs.releaseTools.nixBuild {
+        name = "nix-hello";
+        src = jobs.tarball;
+        buildInputs = [ pkgs.clang ];
+        installPhase = ''
+          mkdir -p $out/bin
+          cp hello $out/bin
+          '';
+      };
   };
 in
   jobs
