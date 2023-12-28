@@ -10,6 +10,10 @@ let
       src = helloSrc;
       doDist = false;
       buildInputs = [ pkgs.clang ];
+      installPhase = ''
+        mkdir -p $out/bin
+        cp hello $out/bin
+      '';
     };
     
     build = { system ? builtins.currentSystem }:
