@@ -1,15 +1,14 @@
-{ stdenv, pkgs, fetchFromGitHub }:
+{ 
+  stdenv,
+  pkgs,
+  helloSrc ? builtins.fetchTarball https://github.com/al-ghoul/Nix-Hello-Cpp/archive/main.tar.gz
+}:
 
 stdenv.mkDerivation { 
   name = "Cpp-Hello";
 
-  src = fetchFromGitHub {
-    owner = "Al-Ghoul";
-    repo = "Nix-Hello-Cpp";
-    rev = "09aeff6";
-    sha256 = "sha256-rzzSnJN6G2Rvgs1azhTtkk6Wz8hp76VHpsHGP0XsHLs=";
-  };
-
+  src = helloSrc; 
+ 
   buildInputs = [ pkgs.clang ] ;
 
   installPhase = ''
