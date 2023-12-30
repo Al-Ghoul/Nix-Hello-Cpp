@@ -12,15 +12,15 @@ To add this project or even a fork of it to your local hydra's instance, follow 
     1. Identifier: Nix-Hello-Cpp (or anything you'd like but it has to be unique among your other projects)
     2. Display name: Nix-Hello-Cpp
     3. Desciption: A program that produces a greeting message.
-    4. Homepage (this one could be docs or project's github url): https://github.com/Al-Ghoul/Nix-Hello-Cpp
+    4. Homepage (This one could be docs page or project's github url): https://github.com/Al-Ghoul/Nix-Hello-Cpp
     5. Create project (ignore everything else, declative spec/input are meant to provide all the info in a JSON format, declaratively (I'll refer to that later))
 4. Adding Jobset(s):
     1. After creating your project, go to hydra's index page, you'll find your project listed there click on the identifier.
     2. Click on actions -> Create jobset.
-    3. Identifier: Nix-Hello-Cpp-Build (Keeping state: Enabled, Visible: Ticked).
+    3. Identifier: Nix-Hello-Cpp-Build (Keeping State: Enabled, Visible: Ticked).
     4. Type: Legacy (I'll provide a flake example later).
     5. Description: Nix-Hello's build jobset.
-    6. Nix expression: release.nix **in** https://github.com/Al-Ghoul/Nix-Hello-Cpp (or your repos url).
+    6. Nix expression: release.nix **in** helloSrc.
     7. Check interval: 60 (seconds).
     8. Scheduling shares: 1.
     9. Skip everything and scroll down to inputs section:  
