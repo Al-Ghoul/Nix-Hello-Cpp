@@ -16,9 +16,8 @@ For English docs click on the following URL: Docs
 
 إقرأ الآتي من اليسار لليمين
 
-1. إضافة المشروع:
-2. identifier (المُعرف): Nix-Hello-Cpp (أو أي شئ تريده و لكن يجب أن يكون فريداً ولا يشبه أسماء أي مشاريع سابقة علي هيدرا)
-3. Display name (الإسم الذي يسظهر لك): Nix-Hello-Cpp
-4. Description (الوصف): برنامج يقوم بإنتاج رسالة تحية.
-5. Homepage (صفحة المشروع) يمكن لهذا أن يكون صفحة الوثائق أو صفحة المشروع علي GitHub: https://github.com/Al-Ghoul/Nix-Hello-Cpp
-6. Create project (قم بالضغط عليه) تجاهل أي شئ آخر، declartive spec/input موجودين لإمكانية إمداد هيدرا بجميع المعلومات عن المشروع في شكل JSON (سأقوم بتوفير مثال لاحقاً)
+1. identifier (المُعرف): Nix-Hello-Cpp (أو أي شئ تريده و لكن يجب أن يكون فريداً ولا يشبه أسماء أي مشاريع سابقة علي هيدرا)
+2. Display name (الإسم الذي يسظهر لك): Nix-Hello-Cpp
+3. Description (الوصف): برنامج يقوم بإنتاج رسالة تحية.
+4. Homepage (صفحة المشروع) يمكن لهذا أن يكون صفحة الوثائق أو صفحة المشروع علي GitHub: https://github.com/Al-Ghoul/Nix-Hello-Cpp
+5. Create project (قم بالضغط عليه) تجاهل أي شئ آخر، declartive spec/input موجودين لإمكانية إمداد هيدرا بجميع المعلومات عن المشروع في شكل JSON (سأقوم بتوفير مثال لاحقاً)
