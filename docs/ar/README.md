@@ -9,8 +9,6 @@ For English docs click on the following URL: Docs
 1. قم بزيارة لوحة التحكم الخاصة بك, عادتاً علي هذا العنوان: http://localhost:3000/
 2. قم بالضغط علي Create project <- Admin (إفتراضاً بأنك قمت بعمل حساب مدير و قمت بتسجيل الدخول أيضاً, إن لم يكن هذا صحيحاً فقم باتباع
    شرح [التثبيت و الإعداد](https://github.com/NixOS/hydra?tab=readme-ov-file#installation-and-setup) الخاص بهم
-   
-   **عليك بقراءة الآتي من اليسار لليمين**
 3. إضافة المشروع:
     1. identifier (المُعرف): Nix-Hello-Cpp (أو أي شئ تريده و لكن يجب أن يكون فريداً ولا يشبه أسماء أي مشاريع سابقة علي هيدرا)
     2. Display name (الإسم الذي يسظهر لك): Nix-Hello-Cpp
