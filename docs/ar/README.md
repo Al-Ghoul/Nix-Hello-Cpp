@@ -45,8 +45,12 @@ Declartive spec و inputالــ <br>
     1. input name (إسم المُدخل) يتم تمرير هذا المُدخل للملف [release.nix](https://github.com/Al-Ghoul/Nix-Hello-Cpp/blob/main/release.nix#L2): helloSrc
     2. Type (النوع): Git checkout
     3. Value (القيمة) بلا علامات تنصيص: "https://github.com/Al-Ghoul/Nix-Hello-Cpp main" <br>
-       (أو قم بإضافة رابط مشروعك, إن كنت تتسائل لما هناك كلمة 'main', الحقيقة أن هيدرا تقوم بالبحث عن تفرُع 'master' و نحن لدينا تفرُع واحد و هو 'main' بهذه الطريقة هيدرا يقوم بالبحث في 'main')
-2. قم بإضافة مدحل آخر:
+       (أو قم بإضافة رابط مشروعك) <br>
+       'main' إن كنت تتسائل لما هناك كلمة <br>
+       'master' الحقيقة أن هيدرا تقوم بالبحث عن تفرُع <br>
+       'main' و نحن لدينا تفرُع واحد و هو <br>
+       'main' وبهذه الطريقة هيدرا يقوم بالبحث في 
+2. قم بإضافة مدخل آخر:
     1. input: nixpkgs
     2. Type: Git checkout
     3. Value: "https://github.com/nixos/nixpkgs nixos-23.11" <br>
