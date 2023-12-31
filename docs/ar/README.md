@@ -50,7 +50,7 @@ Declartive spec و inputالــ <br>
     1. input: nixpkgs
     2. Type: Git checkout
     3. Value: "https://github.com/nixos/nixpkgs nixos-23.11" <br>
-       مرة أخري بلا علامات تنصيص و هنا nixos-23.11 تقوم بتبديل master
+       master تقوم بتبديل nixos-23.11 مرة أخري بلا علامات تنصيص و هنا
 
 ## مراجع
 
