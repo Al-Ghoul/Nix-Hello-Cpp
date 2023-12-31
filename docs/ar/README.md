@@ -38,7 +38,9 @@ Declartive spec و inputالــ <br>
 7. Scheduling shares: 1<br>
 
 ### المدخلات
-   تجاهل باقي المدخلات و قم بالنزول لأسفل الصفحة
+
+تجاهل باقي المدخلات و قم بالنزول لأسفل الصفحة
+
 1. إضغط علي Add a new input:
     1. input name (إسم المُدخل) يتم تمرير هذا المُدخل للملف [release.nix](https://github.com/Al-Ghoul/Nix-Hello-Cpp/blob/main/release.nix#L2): helloSrc
     2. Type (النوع): Git checkout
@@ -47,7 +49,7 @@ Declartive spec و inputالــ <br>
 2. قم بإضافة مدحل آخر:
     1. input: nixpkgs
     2. Type: Git checkout
-    3. Value: "https://github.com/nixos/nixpkgs nixos-23.11"
+    3. Value: "https://github.com/nixos/nixpkgs nixos-23.11" <br>
        مرة أخري بلا علامات تنصيص و هنا nixos-23.11 تقوم بتبديل master
 
 ## مراجع
