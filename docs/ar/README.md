@@ -36,13 +36,15 @@ Declartive spec و inputالــ <br>
 5. Nix expression (ملف نيكس الذي سيقوم ببناء المشروع): release.nix _in_ helloSrc
 6. Check interval (الفاصل الزمني للتحقق من المشروع): 60
 7. Scheduling shares: 1<br>
-   تجاهل باقي المدخلات و قم بالنزل لأسفل الصفحة
-8. إضغط هلي Add a new input:
+
+### المدخلات
+   تجاهل باقي المدخلات و قم بالنزول لأسفل الصفحة
+1. إضغط علي Add a new input:
     1. input name (إسم المُدخل) يتم تمرير هذا المُدخل للملف [release.nix](https://github.com/Al-Ghoul/Nix-Hello-Cpp/blob/main/release.nix#L2): helloSrc
     2. Type (النوع): Git checkout
     3. Value (القيمة) بلا علامات تنصيص: "https://github.com/Al-Ghoul/Nix-Hello-Cpp main" <br>
        (أو قم بإضافة رابط مشروعك, إن كنت تتسائل لما هناك كلمة 'main', الحقيقة أن هيدرا تقوم بالبحث عن تفرُع 'master' و نحن لدينا تفرُع واحد و هو 'main' بهذه الطريقة هيدرا يقوم بالبحث في 'main')
-9. قم بإضافة مدحل آخر:
+2. قم بإضافة مدحل آخر:
     1. input: nixpkgs
     2. Type: Git checkout
     3. Value: "https://github.com/nixos/nixpkgs nixos-23.11"
