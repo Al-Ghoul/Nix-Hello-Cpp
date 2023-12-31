@@ -1,4 +1,4 @@
-For English docs click on the following URL: Docs
+For English refer to [Docs](../../)
 
 # مُقدمة
 
@@ -18,9 +18,9 @@ For English docs click on the following URL: Docs
 
 1. Identifier (المُعرف): Nix-Hello-Cpp (أو أي شئ تريده و لكن يجب أن يكون فريداً ولا يشبه أسماء أي مشاريع سابقة علي هيدرا)
 2. Display name (الإسم الذي سيظهر لك): Nix-Hello-Cpp
-3. Description (الوصف): .برنامج يقوم بإظهار رسالة تحية
+3. Description (الوصف): .برنامج يقوم بإظهار رسالة تحية للمستخدم
 4. Homepage (صفحة المشروع) GitHub يمكن لهذا أن يكون صفحة الوثائق أو صفحة المشروع علي: https://github.com/Al-Ghoul/Nix-Hello-Cpp
-5. Create project .(قم بالضغط عليه) تجاهل أي شئ آخر
+5. Create project .(قم بالضغط عليه و تجاهل أي شئ أخر) 
 
 Declartive spec و inputالــ <br>
 (سأقوم بتوفير مثال لاحقاً) JSON موجودين لإمكانية إمداد هيدرا بجميع المعلومات عن المشروع في شكل
@@ -49,7 +49,7 @@ Declartive spec و inputالــ <br>
        'main' إن كنت تتسائل لما هناك كلمة <br>
        'master' الحقيقة أن هيدرا تقوم بالبحث عن تفرُع <br>
        'main' و نحن لدينا تفرُع واحد و هو <br>
-       'main' وبهذه الطريقة هيدرا يقوم بالبحث في 
+       'main' وبهذه الطريقة هيدرا تقوم بالبحث في
 2. قم بإضافة مدخل آخر:
     1. input: nixpkgs
     2. Type: Git checkout
