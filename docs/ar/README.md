@@ -22,4 +22,10 @@ For English docs click on the following URL: Docs
 4. Homepage (صفحة المشروع) GitHub يمكن لهذا أن يكون صفحة الوثائق أو صفحة المشروع علي: https://github.com/Al-Ghoul/Nix-Hello-Cpp
 5. Create project .(قم بالضغط عليه) تجاهل أي شئ آخر
 
-declartive spec/input موجودين لإمكانية إمداد هيدرا بجميع المعلومات عن المشروع في شكل JSON1 (سأقوم بتوفير مثال لاحقاً)
+Declartive spec و inputالــ <br>
+(سأقوم بتوفير مثال لاحقاً) JSON موجودين لإمكانية إمداد هيدرا بجميع المعلومات عن المشروع في شكل
+
+## إضافة (مجموعة) الوظائف
+بعدما تضف مشروعك، إذهم لصفحة الفهرس الخاصة بهيدرا, ستجد مشاريعك هناك في قائمة.
+1. إضغط علي Create jobset <- actions
+2. Identifier (المُعرف): Nix-Hello-Cpp-Build
