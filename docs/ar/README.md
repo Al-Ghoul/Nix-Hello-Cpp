@@ -26,6 +26,30 @@ Declartive spec و inputالــ <br>
 (سأقوم بتوفير مثال لاحقاً) JSON موجودين لإمكانية إمداد هيدرا بجميع المعلومات عن المشروع في شكل
 
 ## إضافة (مجموعة) الوظائف
-بعدما تضف مشروعك، إذهم لصفحة الفهرس الخاصة بهيدرا, ستجد مشاريعك هناك في قائمة.
+
+بعدما تضف مشروعك، إذهب لصفحة الفهرس الخاصة بهيدرا, ستجد مشاريعك هناك في قائمة.
+
 1. إضغط علي Create jobset <- actions
 2. Identifier (المُعرف): Nix-Hello-Cpp-Build
+3. Type (النوع): Legacy
+4. Description (الوصف): Nix-Hello's build jobset.
+5. Nix expression (ملف نيكس الذي سيقوم ببناء المشروع): release.nix _in_ helloSrc
+6. Check interval (الفاصل الزمني للتحقق من المشروع): 60
+7. Scheduling shares: 1<br>
+   تجاهل باقي المدخلات و قم بالنزل لأسفل الصفحة
+8. إضغط هلي Add a new input:
+    1. input name (إسم المُدخل) يتم تمرير هذا المُدخل للملف [release.nix](https://github.com/Al-Ghoul/Nix-Hello-Cpp/blob/main/release.nix#L2): helloSrc
+    2. Type (النوع): Git checkout
+    3. Value (القيمة) بلا علامات تنصيص: "https://github.com/Al-Ghoul/Nix-Hello-Cpp main" <br>
+       (أو قم بإضافة رابط مشروعك, إن كنت تتسائل لما هناك كلمة 'main', الحقيقة أن هيدرا تقوم بالبحث عن تفرُع 'master' و نحن لدينا تفرُع واحد و هو 'main' بهذه الطريقة هيدرا يقوم بالبحث في 'main')
+9. قم بإضافة مدحل آخر:
+    1. input: nixpkgs
+    2. Type: Git checkout
+    3. Value: "https://github.com/nixos/nixpkgs nixos-23.11"
+       مرة أخري بلا علامات تنصيص و هنا nixos-23.11 تقوم بتبديل master
+
+## مراجع
+
+[NixOS Hydra's Manual](https://hydra.nixos.org/build/196107287/download/1/hydra/introduction.html) <br>
+[NixOS Hydra's Official Repo](https://github.com/NixOS/hydra) <br>
+[NixOS Hydra's Wiki](https://nixos.wiki/wiki/Hydra)
