@@ -1,3 +1,5 @@
+للعربية إضغط علي الرابط التالي: [التوثيق](docs/ar/)
+
 # Intro
 
 This is a NixOS [hydra](https://nixos.wiki/wiki/Hydra) c++ build example (it doesn't use gnu's auto tools for simplicity).
