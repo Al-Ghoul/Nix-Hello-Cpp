@@ -50,13 +50,15 @@ Skip everything and scroll down to inputs section:
 
 -   Input name: helloSrc (This input's name gets passed to [release.nix](https://github.com/Al-Ghoul/Nix-Hello-Cpp/blob/main/release.nix#L2))
 -   Type: Git checkout
--   Value "https://github.com/Al-Ghoul/Nix-Hello-Cpp main" (or provide your projects url, wondering why the extra 'main'?, well by default hydra tries to fetch from master branch, so you can override it like that)
+-   Value: "https://github.com/Al-Ghoul/Nix-Hello-Cpp main" (with no quotes) <br>
+    or provide your projects url, wondering why the extra 'main'?, well by default hydra tries to fetch from master branch, so you can override it like that
 
 2. Add a second input(You'll need another input for nixpkgs):
 
 -   Input name: nixpkgs
 -   Type: Git checkout
--   "https://github.com/nixos/nixpkgs nixos-23.11" (again 'nixos-23.11' overrides or 'specifies' the branch)
+-   Value: "https://github.com/nixos/nixpkgs nixos-23.11" (with no quotes) <br>
+    again 'nixos-23.11' overrides or 'specifies' the branch
 
 </details>
 
