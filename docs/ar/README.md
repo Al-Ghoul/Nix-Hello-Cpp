@@ -15,7 +15,7 @@ For English refer to [Docs](../../)
 ## إضافة مشروع
 
 <details>
-<summary>خطوات إضافة المشروح</summary>
+<summary>خطوات إضافة المشروع</summary>
 
 **إقرأ الآتي من اليسار لليمين**
 
