@@ -54,23 +54,23 @@ Declartive spec و inputالــ <br>
 تجاهل باقي المدخلات و قم بالنزول لأسفل الصفحة
 
 1. إضغط علي Add a new input:
-    1. input name (إسم المُدخل) [release.nix](https://github.com/Al-Ghoul/Nix-Hello-Cpp/blob/main/release.nix#L2) يتم تمرير هذا المُدخل للملف: helloSrc
-    2. Type (النوع): Git checkout
-    3. Value (القيمة) بلا علامات تنصيص: "https://github.com/Al-Ghoul/Nix-Hello-Cpp main" <br>
-       (أو قم بإضافة رابط مشروعك) <br>
-       'main' إن كنت تتسائل لما هناك كلمة <br>
-       'master' الحقيقة أن هيدرا تقوم بالبحث عن تفرُع <br>
-       'main' و نحن لدينا تفرُع واحد و هو <br>
-       'main' وبهذه الطريقة هيدرا تقوم بالبحث في
+    - input name (إسم المُدخل) [release.nix](https://github.com/Al-Ghoul/Nix-Hello-Cpp/blob/main/release.nix#L2) يتم تمرير هذا المُدخل للملف: helloSrc
+    - Type (النوع): Git checkout
+    - Value (القيمة) بلا علامات تنصيص: "https://github.com/Al-Ghoul/Nix-Hello-Cpp main" <br>
+      (أو قم بإضافة رابط مشروعك) <br>
+      'main' إن كنت تتسائل لما هناك كلمة <br>
+      'master' الحقيقة أن هيدرا تقوم بالبحث عن تفرُع <br>
+      'main' و نحن لدينا تفرُع واحد و هو <br>
+      'main' وبهذه الطريقة هيدرا تقوم بالبحث في
 2. قم بإضافة مدخل آخر:
-    1. input: nixpkgs
-    2. Type: Git checkout
-    3. Value: "https://github.com/nixos/nixpkgs nixos-23.11" <br>
-       master تقوم بتبديل nixos-23.11 مرة أخري بلا علامات تنصيص و هنا
+    - input: nixpkgs
+    - Type: Git checkout
+    - Value: "https://github.com/nixos/nixpkgs nixos-23.11" <br>
+      master تقوم بتبديل nixos-23.11 مرة أخري بلا علامات تنصيص و هنا
 
 </details>
 
-## مراجع
+# مراجع
 
 [NixOS Hydra's Manual](https://hydra.nixos.org/build/196107287/download/1/hydra/introduction.html) <br>
 [NixOS Hydra's Official Repo](https://github.com/NixOS/hydra) <br>
