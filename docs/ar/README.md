@@ -10,7 +10,7 @@ For English refer to [Docs](../../)
 
 1. قم بزيارة لوحة التحكم الخاصة بك, عادتاً علي هذا العنوان: http://localhost:3000
 2. قم بالضغط علي Create project <- Admin (إفتراضاً بأنك قمت بعمل حساب مدير و قمت بتسجيل الدخول أيضاً, إن لم يكن هذا صحيحاً فقم باتباع
-   شرح [التثبيت و الإعداد](https://github.com/NixOS/hydra?tab=readme-ov-file#installation-and-setup) الخاص بهم
+   شرح [التثبيت و الإعداد](https://github.com/NixOS/hydra?tab=readme-ov-file#installation-and-setup) الخاص بهيدرا
 
 ## إضافة مشروع
 
@@ -20,29 +20,36 @@ For English refer to [Docs](../../)
 2. Display name (الإسم الذي سيظهر لك): Nix-Hello-Cpp
 3. Description (الوصف): .برنامج يقوم بإظهار رسالة تحية للمستخدم
 4. Homepage (صفحة المشروع) GitHub يمكن لهذا أن يكون صفحة الوثائق أو صفحة المشروع علي: https://github.com/Al-Ghoul/Nix-Hello-Cpp
-5. Create project .(قم بالضغط عليه و تجاهل أي شئ أخر) 
+5. Create project (قم بالضغط عليه و تجاهل أي شئ أخر)
 
 Declartive spec و inputالــ <br>
 (سأقوم بتوفير مثال لاحقاً) JSON موجودين لإمكانية إمداد هيدرا بجميع المعلومات عن المشروع في شكل
 
 ## إضافة (مجموعة) الوظائف
 
-بعدما تضف مشروعك، إذهب لصفحة الفهرس الخاصة بهيدرا, ستجد مشاريعك هناك في قائمة.
+بعدما تضف مشروعك، إذهب لصفحة الفهرس الخاصة بهيدرا, ستجد مشاريعك هناك في قائمة الفهرس.
 
+<details>
+<summary>خطوات إدخال الوظيفة</summary>
 1. إضغط علي Create jobset <- actions
 2. Identifier (المُعرف): Nix-Hello-Cpp-Build
 3. Type (النوع): Legacy
-4. Description (الوصف): Nix-Hello's build jobset.
+4. Description (الوصف): .Nix-Hello's build jobset
 5. Nix expression (ملف نيكس الذي سيقوم ببناء المشروع): release.nix _in_ helloSrc
 6. Check interval (الفاصل الزمني للتحقق من المشروع): 60
 7. Scheduling shares: 1<br>
+</details>
+
+<details>
 
 ### المدخلات
+
+<summary>خطوات المدخلات التبعية</summary>
 
 تجاهل باقي المدخلات و قم بالنزول لأسفل الصفحة
 
 1. إضغط علي Add a new input:
-    1. input name (إسم المُدخل) يتم تمرير هذا المُدخل للملف [release.nix](https://github.com/Al-Ghoul/Nix-Hello-Cpp/blob/main/release.nix#L2): helloSrc
+    1. input name (إسم المُدخل) [release.nix](https://github.com/Al-Ghoul/Nix-Hello-Cpp/blob/main/release.nix#L2) يتم تمرير هذا المُدخل للملف: helloSrc
     2. Type (النوع): Git checkout
     3. Value (القيمة) بلا علامات تنصيص: "https://github.com/Al-Ghoul/Nix-Hello-Cpp main" <br>
        (أو قم بإضافة رابط مشروعك) <br>
@@ -55,6 +62,8 @@ Declartive spec و inputالــ <br>
     2. Type: Git checkout
     3. Value: "https://github.com/nixos/nixpkgs nixos-23.11" <br>
        master تقوم بتبديل nixos-23.11 مرة أخري بلا علامات تنصيص و هنا
+
+</details>
 
 ## مراجع
 
