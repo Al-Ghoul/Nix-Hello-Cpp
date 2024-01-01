@@ -14,6 +14,9 @@ For English refer to [Docs](../../)
 
 ## إضافة مشروع
 
+<details>
+<summary>خطوات إضافة المشروح</summary>
+
 **إقرأ الآتي من اليسار لليمين**
 
 1. Identifier (المُعرف): Nix-Hello-Cpp (أو أي شئ تريده و لكن يجب أن يكون فريداً ولا يشبه أسماء أي مشاريع سابقة علي هيدرا)
@@ -25,12 +28,15 @@ For English refer to [Docs](../../)
 Declartive spec و inputالــ <br>
 (سأقوم بتوفير مثال لاحقاً) JSON موجودين لإمكانية إمداد هيدرا بجميع المعلومات عن المشروع في شكل
 
+</details>
+
 ## إضافة (مجموعة) الوظائف
 
 بعدما تضف مشروعك، إذهب لصفحة الفهرس الخاصة بهيدرا, ستجد مشاريعك هناك في قائمة الفهرس.
 
 <details>
 <summary>خطوات إدخال الوظيفة</summary>
+
 1. إضغط علي Create jobset <- actions
 2. Identifier (المُعرف): Nix-Hello-Cpp-Build
 3. Type (النوع): Legacy
@@ -38,11 +44,10 @@ Declartive spec و inputالــ <br>
 5. Nix expression (ملف نيكس الذي سيقوم ببناء المشروع): release.nix _in_ helloSrc
 6. Check interval (الفاصل الزمني للتحقق من المشروع): 60
 7. Scheduling shares: 1<br>
+
 </details>
 
 <details>
-
-### المدخلات
 
 <summary>خطوات المدخلات التبعية</summary>
 
