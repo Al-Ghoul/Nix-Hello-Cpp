@@ -12,9 +12,11 @@ let
       buildInputs = [ pkgs.clang ] ;
 
       installPhase = ''
+        runHook preInstall
         mkdir -p $out/bin
         cp hello $out/bin
-        '';
+        runHook postInstall
+      '';
     };
   };
 in
