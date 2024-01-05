@@ -3,5 +3,5 @@
 
 int main() {
   int x = 5;
-  std::cout << "Hello Abdo .AlGhoul!";
+  std::cout << "Hello Abdo .AlGhoul!\n";
 }

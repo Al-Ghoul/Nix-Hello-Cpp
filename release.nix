@@ -17,7 +17,14 @@ let
         cp hello $out/bin
         runHook postInstall
       '';
+
+      passthru.tests.run = pkgs.runCommand "hello-test" { nativeBuildInputs = [ build ]; }
+      ''
+        diff -U3 --color=auto <(hello) <(echo 'Hello Abdo .AlGhoul!')
+        touch $out
+      '';
     };
+    tests = build.tests;
   };
 in
   jobs
